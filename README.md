@@ -1,3 +1,5 @@
+*** VIEW IN RAW ***
+
 * Hashing
 Contains some scripts which are able to generate and break hashes...:)
 
