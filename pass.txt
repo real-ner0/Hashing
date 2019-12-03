@@ -1,0 +1,7 @@
+superuser:toor
+admin:admin
+user:passw0rd
+kevin:wordl
+root:SLKAV/dsqSfhg
+none:oftheaboveworks
+right:nnanana
