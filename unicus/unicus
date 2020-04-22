@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+# ner0 https://www.github.com/real-ner0
+
+
+# Define usage for the script
+def usage
+  puts "unicus can calculate MD5, SHA-1, SHA-256 and SHA-512 hashes of given text."
+  puts "Usage: unicus <text_string>\n"
+end
+
+
+# If CL args are empty, display the usage and close the program
+if ARGV.empty?
+  usage()
+  exit
+end
+
+
+# Load the library
+require 'digest'
+
+
+# Copy the user input into 'user_input'
+user_input = ARGV[0]
+
+
+# Calculate MD5 Hash
+puts "\nMD5:\n" + Digest::MD5.hexdigest(user_input)
+puts "\nSHA-1:\n" + Digest::SHA1.hexdigest(user_input)
+puts "\nSHA-256:\n" + Digest::SHA256.hexdigest(user_input)
+puts "\nSHA-512:\n" + Digest::SHA512.hexdigest(user_input)
